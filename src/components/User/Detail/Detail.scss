@@ -1,0 +1,100 @@
+.product {
+  &-add,
+  &-buy {
+    width: 50%;
+    align-items: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 18px;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  &-add {
+    display: flex;
+    background-color: orangered;
+  }
+
+  &-buy {
+    background-color: #ffc107;
+  }
+
+  [type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* IMAGE STYLES */
+  [type="radio"] + img {
+    cursor: pointer;
+  }
+
+  /* CHECKED STYLES */
+  [type="radio"]:checked + img {
+    outline: 2px solid #f00;
+  }
+
+  &-slogan {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 8px 0;
+    border-radius: 8px;
+    ul {
+      margin-top: 13px;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        margin: 0 18px 12px;
+        border-bottom: 1px solid #ccc;
+        ion-icon {
+          color: green;
+          font-size: 2, 4rem;
+        }
+        &:nth-child(4) {
+          border: none;
+        }
+      }
+    }
+  }
+
+  &-store {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+  }
+
+  &-contact {
+    margin-top: 20px;
+    padding: 8px 0;
+    background-color: #fff3cd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    h2 {
+      color: red;
+    }
+  }
+
+  &-description {
+    margin-top: 50px;
+    padding: 10px 0;
+  }
+
+  &-info {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 18px;
+    padding-bottom: 2px;
+  }
+}

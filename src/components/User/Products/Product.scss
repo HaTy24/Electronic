@@ -1,0 +1,46 @@
+.products {
+  margin-top: 20px;
+  &-items {
+    background-color: #fff;
+    border-radius: 15px;
+  }
+  &-item {
+    cursor: pointer;
+    padding-top: 13px;
+    text-align: center;
+    &:hover .products-img {
+      transform: scale(1.1);
+    }
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+  &-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  &-title {
+    margin: 20px 0;
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 30px;
+    color: red;
+  }
+  &-img {
+    width: auto;
+    height: 150px;
+    transition: all 0.3s linear;
+  }
+  &-name {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  &-price {
+    color: red;
+    font-weight: 700;
+  }
+}

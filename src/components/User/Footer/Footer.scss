@@ -1,0 +1,19 @@
+.footer {
+  li {
+    margin-bottom: 10px;
+    color: #666;
+    font-weight: 400;
+  }
+
+  &-contact {
+    max-width: 34px;
+    margin-right: 9px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+
+  &-checkout {
+    margin-top: 12px;
+    margin-right: 9px;
+  }
+}

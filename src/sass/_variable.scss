@@ -1,0 +1,25 @@
+$main-color: #101010;
+$header-color: #212121;
+$second-color: #e62e2d;
+$third-color: #303030;
+$five-color: #4f9bed;
+$text-color: #ddd;
+$main-color: #de2c3e;
+$text-color: #000;
+$side-color: #ddd;
+$active-color: #594ae2;
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff6633;
+  border-radius: 30px;
+}
+// ::-webkit-scrollbar-thumb:hover {
+//   background: $third-color;
+// }

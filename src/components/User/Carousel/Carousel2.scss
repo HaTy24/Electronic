@@ -1,0 +1,108 @@
+.Carousel {
+  margin: 120px auto 20px;
+  &-container {
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05);
+  }
+  &-wrap {
+    gap: 20px;
+    display: flex;
+  }
+  &-sale {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  &-title {
+    margin: 10px 0 0;
+    border-bottom: 1px solid #c0c0c0;
+    position: relative;
+    span {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 3px solid red;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        animation: zoom 1s linear infinite;
+      }
+    }
+  }
+
+  @keyframes zoom {
+    0% {
+      width: 1px;
+      height: 1px;
+      opacity: 1;
+    }
+    100% {
+      width: 22px;
+      height: 22px;
+      opacity: 0;
+    }
+  }
+  &-items {
+    margin-top: 12px;
+    height: 290px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  &-item {
+    margin-top: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    h3,
+    span {
+      display: block;
+      padding: 8px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    // display: block;
+  }
+  @media screen and (max-width: 768px) {
+    &-container {
+      border-radius: 0;
+    }
+    &-sale {
+      padding: 0;
+    }
+    &-wrap {
+      display: block;
+    }
+  }
+}
+
+.slick-dots {
+  bottom: 0;
+  li button:before,
+  li.slick-active button:before {
+    color: transparent;
+    opacity: 1;
+  }
+  li button:before {
+    content: "";
+    position: absolute;
+    background-color: #ccc;
+    height: 6px;
+    width: 25px;
+    border-radius: 5px;
+  }
+  li.slick-active button:before {
+    background-color: #fff;
+  }
+}

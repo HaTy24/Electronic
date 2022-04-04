@@ -1,0 +1,50 @@
+@import "../../../sass/variable.scss";
+// .movies {
+//   padding: 30px;
+// }
+.title {
+  text-align: center;
+  font-size: 30px;
+  color: $side-color;
+  margin-bottom: 25px;
+  border-bottom: 5px solid $main-color;
+  background-color: #000;
+  border-radius: 5px;
+}
+.select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $active-color;
+}
+
+label {
+  margin-top: 10px;
+  color: $active-color;
+}
+
+.des {
+  display: block;
+}
+
+.vview-btn {
+  display: inline-block;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 2px 8px;
+}
+.viewmore {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    padding: 0 10px;
+    font-size: 25px;
+  }
+}
